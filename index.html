@@ -3,7 +3,7 @@ layout: default
 ---
 
 <html>
-  <head>
+  <head>re
     <meta http-content='IE=Edge' http-equiv='X-UA-Compatible'>
     <meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
     <link href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet'>
@@ -109,27 +109,6 @@ background-position: center !important;">
       <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
         <h2 class="section-title">{{site.data.homepage.about.title}}</h2>
         <p>{{site.data.homepage.about.first_paragraph}}</p><br>
-
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>Month</th>
-                      <th>Revenue</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {% for income in site.data.homepage.about.income_table %}
-                        <tr>
-                          <td>{{ income.month }}</td>
-                          <td class="amount">{{ income.income }}</td>
-                        </tr>
-                    {% endfor %}
-                  </tbody>
-                </table>
-            </div>
-        </div><br>
 
         <p>{{site.data.homepage.about.second_paragraph}}</p><br><br>
 
